@@ -126,9 +126,11 @@ h4{
     }
      h1{
         font-size: 25px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     h4{
         font-size: 20px;
+
     }
     .button{
         width: 80%;
@@ -144,5 +146,6 @@ h4{
     margin: auto;
     width: 90%;
   height: 70px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     } 
 }
