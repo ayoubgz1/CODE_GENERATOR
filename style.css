@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    height: 100vh;
+    padding: 130px 100px;
+    background-image: url(imge.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.button{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 10px;
+}
+.button button{
+    width: 150px;
+    height: 40px;
+    border-style: none;
+    border-radius: 15px;
+    background-color: rgb(217, 76, 212);
+    font-size: 10px;
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition : 0.3s;
+    cursor: pointer;
+}
+.button button:hover{
+    color: rgb(217, 76, 212);
+    background-color: aliceblue;
+    box-shadow: 0px 0px 1000px rgb(0, 0, 0);
+    scale: 1.1;
+}
+
+
+.option{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+   transition: 0.3s;
+}
+.option label,.option input{
+    color: rgb(217, 76, 212);
+cursor: pointer;
+}
+
+.code{
+    display: flex;
+     width: 50%;
+    justify-content: flex-end;
+}
+.code #code{
+    width: 300px;
+    height: 40px;
+    border-style: none;
+    border-radius: 15px;
+    border: 1PX gray solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(192, 117, 252);
+    font-family: cursive;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.code #code:hover{
+ box-shadow: 0px 0px 10000px rgb(0, 0, 0);
+ scale: 1.2;
+}
+h1{
+    font-family:cursive;
+    color: rgb(199, 165, 237);
+}
+h4{
+    padding-left: 10px;
+    font-size: 23px;
+    font-family: cursive;
+    color: rgb(217, 76, 212);
+}
+
+@media(min-width:1400px){
+    body{
+        padding-top: 130px;
+        padding-left: 120px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    h4{
+        font-size: 50px;
+    }
+    #button{
+        width: 50%;
+        height: 70px;
+        font-size: 30px;
+    }
+    .option ,label{
+          font-size: 40px;
+    }
+   .code #code{
+        width: 700px;
+        height: 70px;
+        font-size: 35px;
+    }
+}
+
+
+
+@media(max-width:580px){
+    body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+    }
+     h1{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .button{
+        width: 80%;
+    }
+    #button{
+        width: 75%;
+        font-size: 15px;
+    }
+    .code{
+        width: 100%;
+    }
+   .code #code{
+    margin: auto;
+    width: 90%;
+  height: 70px;
+    } 
+}
